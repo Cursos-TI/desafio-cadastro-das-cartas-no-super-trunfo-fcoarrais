@@ -20,6 +20,12 @@ int main() {
     float pib;
     int pontosturisticos;
 
+    //Calcular a densidade populacional
+    float densidadepopulacional = (float) populacao / area;
+
+    //Calcular o PIB percapita
+    float pibpercapita = (float) pib / populacao;
+
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
@@ -57,6 +63,7 @@ int main() {
     printf("Área: %f \n", area);
     printf("PIB: %f \n", pib);
     printf("Pontos Turísticos: %d \n", pontosturisticos);
-
+    printf("Densidade Polucional: %.2f \n", densidadepopulacional);
+    printf("PIB per Capita: %.2f \n", pibpercapita);
     return 0;
 }
